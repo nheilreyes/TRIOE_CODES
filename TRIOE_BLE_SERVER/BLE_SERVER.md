@@ -10,7 +10,7 @@ This project sets up an **TRIOE BOARD** as a BLE (Bluetooth Low Energy) server t
 - The built-in LED (Pin 2) turns **ON** when a BLE client connects and **OFF** when it disconnects.
 
 ## Functionality
-1. The ESP32-S3 acts as a BLE server with a custom service and characteristic.
+1. The TRIOE BOARD acts as a BLE server with a custom service and characteristic.
 2. It advertises its BLE presence, allowing a client to connect.
 3. When a client connects, the built-in LED turns **ON**.
 4. The client sends JSON data containing RSSI, message, and temperature.
