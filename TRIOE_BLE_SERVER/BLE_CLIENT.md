@@ -8,7 +8,8 @@ The client communicates with the server via a predefined BLE service and charact
 - ESP32-S3 Board
   ![0001](https://github.com/user-attachments/assets/11ea821c-de2b-461b-b674-91809393be7c)
 - USB Programming Cable
-  ![images (3)](https://github.com/user-attachments/assets/336e5f53-3842-4ac3-bcd7-2fd0a967170f)
+  ![Untitled design (6)](https://github.com/user-attachments/assets/10f3ca08-3d6d-43b2-9588-a25222b06fca)
+
 
 
 ## Software Requirements
