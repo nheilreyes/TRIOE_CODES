@@ -10,7 +10,7 @@ This project implements a **Bluetooth Low Energy (BLE) Server** using an **TRIOE
 - Restarts advertising when a client disconnects
 
 ## Hardware Requirements
-- ESP32-S3 Board
+- TRIOE Board
   ![0001](https://github.com/user-attachments/assets/11ea821c-de2b-461b-b674-91809393be7c)
 - USB Programming Cable
   ![Untitled (1920 x 1080 px)](https://github.com/user-attachments/assets/2044463f-6aaf-4db5-b7dc-63f54a27385b)
