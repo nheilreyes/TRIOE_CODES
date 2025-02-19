@@ -1,6 +1,6 @@
 # BME280 Sensor with OLED Screen
 
-This project reads temperature, humidity, and pressure using the BME280 sensor and displays the readings on an OLED screen using the TRIOE Board.
+The provided code initializes the BME280 sensor, retrieves temperature, humidity, and pressure readings, and displays them on the OLED screen.
 
 ## Hardware Required
 - **TRIOE Board**
@@ -46,6 +46,7 @@ The provided code initializes the BME280 sensor and retrieves temperature, humid
 
 ## Schematic
 
+![18](https://github.com/user-attachments/assets/0beaaa90-93b0-409f-a8c0-a5f7748e8a1e)
 
 
 
