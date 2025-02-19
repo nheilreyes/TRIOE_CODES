@@ -48,7 +48,7 @@ Make sure you have the following libraries installed in the **Arduino IDE**:
 4. Open the Serial Monitor (**115200 baud**) to view logs.
 
 ### 3. Connect a BLE Client
-- Run the ESP32 BLE Client code on another TRIOE Board.
+- Run the TRIOE BLE Client code on another TRIOE Board.
 - The client will connect, send JSON data, and receive responses.
 
 ### 4. Monitor the Server Output
