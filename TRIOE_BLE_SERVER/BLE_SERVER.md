@@ -1,23 +1,79 @@
 # BLE Server
 
-This project sets up an **TRIOE BOARD** as a BLE (Bluetooth Low Energy) server that communicates with a client, receives JSON data, and processes RSSI, message, and temperature values. The built-in LED on pin 2 indicates connection status.
+This project implements a **Bluetooth Low Energy (BLE) Server** using an **TRIOE BOARD** microcontroller. The server receives JSON data from a BLE client, parses the data, and processes values such as RSSI, temperature, and a message. It also turns on an LED when a client connects and turns it off when disconnected.
 
-## Hardware Required
-- TRIOE board
-- USB cable for programming
+## Features
+- Creates a BLE server with a **custom service and characteristic**
+- Listens for connections from a BLE client
+- Parses JSON data sent by the client (includes RSSI, temperature, and a message)
+- Controls the built-in LED based on connection status
+- Restarts advertising when a client disconnects
 
-## Circuit
-- The built-in LED (Pin 2) turns **ON** when a BLE client connects and **OFF** when it disconnects.
+## Components Used
+- **TRIOE** board
+- Built-in **LED** (GPIO 2)
 
-## Functionality
-1. The TRIOE BOARD acts as a BLE server with a custom service and characteristic.
-2. It advertises its BLE presence, allowing a client to connect.
-3. When a client connects, the built-in LED turns **ON**.
-4. The client sends JSON data containing RSSI, message, and temperature.
-5. The ESP32-S3 parses and prints the received data.
-6. When the client disconnects, the LED turns **OFF**, and the ESP32 starts advertising again.
+## BLE Configuration
+- **Service UUID**: `12345678-1234-5678-1234-56789abcdef0`
+- **Characteristic UUID**: `abcdef01-1234-5678-1234-56789abcdef0`
 
-![0001](https://github.com/user-attachments/assets/cdf515e2-0b5b-4e0f-95f6-1f2998c93716)
+## Code Overview
+### 1. BLE Server Setup
+- Initializes BLE and creates a **BLE server**
+- Defines a **service** and a **characteristic** for data communication
+- Sets up **callbacks** to handle client connections and data reception
+- Starts **BLE advertising** to allow clients to find and connect
 
+### 2. Connection Handling
+- **onConnect()**: Turns on the LED when a client connects
+- **onDisconnect()**: Turns off the LED and restarts BLE advertising when a client disconnects
 
+### 3. Data Handling
+- Receives JSON data from the client
+- Parses and extracts values for RSSI, temperature, and a message
+- Prints received values to the serial monitor
+
+## Installation & Usage
+### 1. Install Dependencies
+Make sure you have the following libraries installed in the **Arduino IDE**:
+- `ArduinoJson`
+- `ESP32 BLE Arduino`
+
+### 2. Upload the Code
+1. Connect your **TRIOE Board** to your computer via USB.
+2. Open the **Arduino IDE** and select the correct board and port.
+3. Upload the `TRIOE_BLE_Server` code.
+4. Open the Serial Monitor (**115200 baud**) to view logs.
+
+### 3. Connect a BLE Client
+- Run the ESP32 BLE Client code on another TRIOE Board.
+- The client will connect, send JSON data, and receive responses.
+
+### 4. Monitor the Server Output
+Once connected, observe the **Serial Monitor** for incoming data:
+```
+Client Connected
+Received Value: {"rssi":-65,"message":"Hello from ESP32 client","temperature":28.0}
+RSSI: -65
+Message: Hello from ESP32 client
+Temperature: 28.0°C
+```
+
+## Expected Behavior
+| Event               | LED Status | Serial Output |
+|--------------------|-----------|---------------|
+| Server starts      | OFF       | "BLE Server Started. Waiting for Client..." |
+| Client connects    | ON        | "Client Connected" |
+| Client sends data  | ON        | Received JSON data with RSSI, message, and temperature |
+| Client disconnects | OFF       | "Client Disconnected", advertising restarts |
+
+## Troubleshooting
+- **Client not connecting?**
+  - Ensure both TRIOE Board devices are powered on and running.
+  - Check UUID values in both client and server code.
+  - Verify that BLE is enabled on the TRIOE Board.
+
+- **No data received?**
+  - Ensure the client is sending properly formatted JSON.
+  - Check for parsing errors in the serial monitor.
 
