@@ -1,4 +1,4 @@
-# ESP32-S3 BLE Server
+# BLE Server
 
 This project sets up an **TRIOE BOARD** as a BLE (Bluetooth Low Energy) server that communicates with a client, receives JSON data, and processes RSSI, message, and temperature values. The built-in LED on pin 2 indicates connection status.
 
