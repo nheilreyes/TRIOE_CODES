@@ -11,7 +11,7 @@ This project implements a **Bluetooth Low Energy (BLE) Server** using an **TRIOE
 
 ## Components Used
 - **TRIOE** board
-- Built-in **LED** (GPIO 2)
+ ![0001](https://github.com/user-attachments/assets/11ea821c-de2b-461b-b674-91809393be7c)
 
 ## BLE Configuration
 - **Service UUID**: `12345678-1234-5678-1234-56789abcdef0`
@@ -77,4 +77,3 @@ Temperature: 28.0°C
   - Ensure the client is sending properly formatted JSON.
   - Check for parsing errors in the serial monitor.
 
-![0001](https://github.com/user-attachments/assets/11ea821c-de2b-461b-b674-91809393be7c)
