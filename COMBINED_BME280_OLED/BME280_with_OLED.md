@@ -1,29 +1,52 @@
-**BME280 with OLED**
+# BME280 Sensor with OLED Screen
 
-This project reads temperature, humidity, and pressure using the BME280 sensor and displays the readings on an OLED screen using the Trioe board.
+This project reads temperature, humidity, and pressure using the BME280 sensor and displays the readings on an OLED screen using the TRIOE Board.
 
-**Hardware Required:**
-	•	Trioe board
-	•	Trioe board slice
-	•	Jumper wires
-	•	OLED screen
-	•	Female headers
+## Hardware Required
+- **TRIOE Board**
+- **TRIOE Board Slice**
+- **BME280 Sensor**
+- **OLED Screen**
+- **Jumper Wires**
+- **Female Headers**
 
-**Circuit Connection**
+## Circuit Connection
+The BME280 sensor uses the I2C communication protocol. The following connections are required:
 
-The BME280 sensor and the OLED screen communicate via the I2C protocol.
+| BME280 Pin | TRIOE Pin |                    
+|------------|-----------|
+| VCC        | 5 V      |                            
+| GND        | GND       |                        
+| SCL        | D6        |          
+| SDA        | D4        |
 
-**Code Explanation**
 
-The provided code initializes the BME280 sensor, retrieves temperature, humidity, and pressure readings, and displays them on the OLED screen.
+ OLED Screen Pin | TRIOE Pin |
+|------------|-----------|
+| VCC        | 5 V      |
+| GND        | GND       |
+| SCL        | D38        |
+| SDA        | D40        |
 
-**Key Features:**
-	•	Uses WireData for I2C communication
-	•	Includes the following libraries:
-	•	Adafruit BusIO
-	•	Adafruit_GFX.h
-	•	Adafruit_SSD1327
-	•	Adafruit_BME280
-	•	Reads data via I2C communication
-	•	Displays sensor details upon initialization
-	•	Prints temperature (°C), humidity (%), and pressure (hPa) on the OLED screen along with corresponding icons every second
+
+## Code Explanation
+The provided code initializes the BME280 sensor and retrieves temperature, humidity, and pressure readings, displaying them via the serial monitor.
+
+### Key Features:
+- Includes the following libraries:
+- Adafruit BusIO
+- WireData
+- Adafruit_GFX.h
+- Adafruit_SSD1327
+- Adafruit_BME280
+- Reads data via I2C communication
+- Displays sensor details upon initialization
+- Prints temperature (°C), humidity (%), and pressure (hPa) on the OLED screen along with corresponding icons every second
+
+
+## Schematic
+
+
+
+
+
