@@ -15,16 +15,16 @@ The Servo motor. The following connections are required:
 
 | Servo Pin | TRIOE Pin |                    
 |------------|-----------|
-| VCC        | 5 V      |                            
+| VCC        | 5V      |                            
 | GND        | GND       |                        
 | SIGNAL PIN        | D4        |          
 
  Push Button | TRIOE Pin |
 |------------|-----------|
-| LEG 1        | 5 V      |
+| LEG 1        | 5V      |
 | LEG 2       | GND  (via resistor)      |
-| LEG 1 (jumper wire)        |         |
-| SDA        | D2        |
+| LEG 1 (jumper wire)        |  D2       |
+
 
 
 ## Code Explanation
