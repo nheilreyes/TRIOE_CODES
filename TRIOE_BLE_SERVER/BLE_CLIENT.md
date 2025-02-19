@@ -64,8 +64,8 @@ Reconnecting...
 ```
 
 ## Usage Instructions
-1. Upload the BLE Server code to another ESP32-S3 device.
-2. Upload this BLE Client code to the ESP32-S3 client device.
+1. Upload the BLE Server code to another TRIOE Board device.
+2. Upload this BLE Client code to the TRIOE Board client device.
 3. Open the Serial Monitor at `115200` baud rate.
 4. Observe connection attempts, RSSI values, and JSON data transmission.
 
@@ -78,5 +78,6 @@ Reconnecting...
 - **Data not being sent?**
   - Check that the service and characteristic exist on the server.
 
+![0001](https://github.com/user-attachments/assets/e3e6d60a-b4d8-4fa2-bf64-0f173a438660)
 
 
