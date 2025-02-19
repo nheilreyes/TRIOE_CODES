@@ -9,9 +9,11 @@ This project implements a **Bluetooth Low Energy (BLE) Server** using an **TRIOE
 - Controls the built-in LED based on connection status
 - Restarts advertising when a client disconnects
 
-## Components Used
-- **TRIOE** board
- ![0001](https://github.com/user-attachments/assets/11ea821c-de2b-461b-b674-91809393be7c)
+## Hardware Requirements
+- ESP32-S3 Board
+  ![0001](https://github.com/user-attachments/assets/11ea821c-de2b-461b-b674-91809393be7c)
+- USB Programming Cable
+  ![Untitled (1920 x 1080 px)](https://github.com/user-attachments/assets/2044463f-6aaf-4db5-b7dc-63f54a27385b)
 
 ## BLE Configuration
 - **Service UUID**: `12345678-1234-5678-1234-56789abcdef0`
