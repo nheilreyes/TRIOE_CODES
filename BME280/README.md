@@ -1,4 +1,4 @@
-# BME280 Sensor
+# BME280 Sensor 
 
 This project reads temperature, humidity, and pressure using the BME280 sensor with an TRIOE board.
 
