@@ -1,4 +1,4 @@
-# Servo Motor with Push Button
+# Servo Motor with Push Button 
 
 This project is an automated car entrance system where pressing Button 1 moves the servo to 90 degrees, and pressing Button 2 moves it back to 0 degrees.
 
