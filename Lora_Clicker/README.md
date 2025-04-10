@@ -44,7 +44,7 @@ The system is divided into **three nodes**: **Transmitter**, **Relay**, and **Re
 | MOSI          | MOSI              |
 | MISO          | MISO              |
 
-### **Receiver Actuator Node**  
+### **Receiver  Node**  
 | LoRa Module   | Arduino Leonardo  |
 |---------------|-------------------|
 | Antenna       | -                 |
