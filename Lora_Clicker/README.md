@@ -19,7 +19,7 @@ The **transmitter node** sends movement commands (Next and Prev), which are rela
 
 ## **Circuit Connections**
 
-The system is divided into **three nodes**: **Transmitter**, **Relay**, and **Receiver Actuator Node**, with each node having specific connections.
+The system is divided into **two nodes**: **Transmitter**, and **Receiver Node**, with each node having specific connections.
 
 ### **Transmitter Node**  
 | Push Button 1 | Arduino Leonardo  |
